@@ -14,9 +14,9 @@ https://github.com/pavankaware/sql-query-simulator
 
 ## Framework & Major Dependencies
 
-- **Framework:** [React](https://react.dev/)  
-- **UI Libraries:** [react-bootstrap](https://react-bootstrap.github.io/)
-- **Virtualization:** [react-virtualized](https://github.com/bvaughn/react-virtualized) — Efficient rendering of large tables
+- **Framework:** [React]
+- **UI Libraries:** [react-bootstrap]
+- **Virtualization:** [react-virtualized] — Efficient rendering of large tables
 
 
 ## Features
