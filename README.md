@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SQL Query Simulator
 
-Currently, two official plugins are available:
+An interactive React application for simulating SQL queries and rendering large datasets in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Walkthrough Video
+https://www.loom.com/share/1522fe0fb02c4fd389ac4d2733c79091?sid=abac2129-dca4-4339-ad7f-4e5b0016a909
+
+## Deployed Application URL 
+https://sql-query-simulator.netlify.app/
+
+## Framework & Major Dependencies
+
+- **Framework:** [React](https://react.dev/)  
+- **UI Libraries:** [react-bootstrap](https://react-bootstrap.github.io/)
+- **Virtualization:** [react-virtualized](https://github.com/bvaughn/react-virtualized) — Efficient rendering of large tables
+
+
+## Features
+
+- SQL Editor for writing and executing queries
+- Table list and predefined queries
+- Query history
+- Virtualized table rendering for large datasets
+- CSV export utility
+d   
+## Page Load Time
+
+- **Measured Load Time:** 1400 ms for around 3k records 
+- **Measurement Method:** Used Lighthouse and Build in Performance API
+
+## Performance Optimisations
+
+- **Virtualized Rendering:** Leveraged `react-virtualized` to efficiently render large datasets (tested 20000+ rows) without crashing the browser.
+- **Memoization:** Used and `useMemo` to prevent unnecessary re-renders.
+- **Efficient Data Generation:** Custom utility for generating large, realistic datasets.
+- **Minimal CSS:** Only essential styles for fast rendering.
+
+## Rendering Large Datasets
+
+- Successfully rendered **over 20,000 rows** using virtualization without browser crashes or performance degradation.
+
+## Running the Project
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+For production, consider using TypeScript and type-aware lint rules. See [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for details.
+
+---
