@@ -9,6 +9,9 @@ https://www.loom.com/share/1522fe0fb02c4fd389ac4d2733c79091?sid=abac2129-dca4-43
 ## Deployed Application URL 
 https://sql-query-simulator.netlify.app/
 
+## Github repo link 
+https://github.com/pavankaware/sql-query-simulator
+
 ## Framework & Major Dependencies
 
 - **Framework:** [React](https://react.dev/)  
